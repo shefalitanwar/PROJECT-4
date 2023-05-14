@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>MEDIA-QUERY</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            background-color:black;
+        }
+
+        
+.hand{
+   
+    display:flex;
+    height:30px;
+    width:30px;
+    margin-top:25%;
+    margin-left:25%;
+}
+
+hr{
+    width:300px;
+    color:blue;
+    height:2px;
+}
+
+.content{
+color:white;
+    font-size:15px;
+}
+
+
+.content span{
+    color:rgb(255, 255, 0);
+}
+.pc{
+
+    display:flex;
+    height:350px;
+    width:300px;
+    margin-left:40%;
+    margin-top:0%;
+    align-items:center;
+}
+
+.head{
+    margin-top:20%;
+    margin-bottom:1%;
+    color:white;
+}
+
+ .projects{ 
+     display:flex;
+     --gap:0%;
+    flex-direction:column;
+    margin-top:70px;
+    align-items:center; }
+
+.project-lists{
+--gap:0%;
+--num-cols:2;
+margin-bottom:10%;
+/* --row-height:300px; */
+box-sizing: border-box;
+display:grid;
+/* grid-template-columns:repeat(var(--num-cols), 1fr) ; */
+/* grid-auto-rows: var(--row-height); */
+/* gap:var(--gap); */
+}
+
+.project-lists > img{
+    margin-top:300px;
+height:100%
+width:100%
+}
+.headline{
+    color:white;
+    margin-top:0%;
+    margin:0%;
+    padding:0%;
+    margin-left:20%;
+}
+
+footer{
+    margin:0;
+    padding:0;
+}
+
+section{
+    padding:0;
+    margin:0;
+    margin-top:5%;
+
+}
+.contact{
+    font-size:20px;
+    margin-left:600px;
+    color:white;
+    align-items: center;
+
+}
+
+.lines{
+    display:flex;
+    color:white;
+   font-size:30px;
+    row-gap: 10px;
+    column-gap: 20px;
+    align-items:center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:1440px){
+
+    *{
+        background-color: black;
+
+    }
+
+}
+
+@media screen and (min-width:425px) and (max-width:1024px){
+    *{
+        background-color: brown;
+    }
+}
+
+
+    </style>z
+</head>
+
+<body>
+        <!-- main section -->
+    <!-- left section -->
+<header>
+    <section>
+     
+        <div class ="hand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Twemoji12_1f44b.svg/512px-Twemoji12_1f44b.svg.png
+            " alt="hand">
+            <h1 class="content">HI_EVERYONE <br>
+           <div>MARK_ENDERSON</div>
+        <span>developer</span></h1>
+        </div>
+        <div class="pc">
+            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1998567/coding-svg-clipart-md.png" alt="image">
+         </div>
+    </section>  
+    </header>
+     <!-- hero-section -->
+     <main>
+     <section class="projects">
+    
+            <h1 class="head">projects</h1>
+        <!-- <div >"horizontal-divider"</div>  -->
+
+        <hr>
+    
+          <div class="project-lists">
+             <img src="https://cdn2.iconfinder.com/data/icons/web-mobile-2-1/64/picture_web_mobile_image_album_gallery_button-512.png
+                " alt=""><p class="headline">project 1</p>
+
+                 <img src="https://cdn2.iconfinder.com/data/icons/web-mobile-2-1/64/picture_web_mobile_image_album_gallery_button-512.png
+                    " alt=""><p class="headline">project 2</p>
+
+                <img src="https://cdn2.iconfinder.com/data/icons/web-mobile-2-1/64/picture_web_mobile_image_album_gallery_button-512.png
+                        " alt=""> <p class="headline">project 3</p>
+    <img src="https://cdn2.iconfinder.com/data/icons/web-mobile-2-1/64/picture_web_mobile_image_album_gallery_button-512.png
+                " alt=""><p class="headline">project 4</p>
+            </div>
+     </section>
+  
+</main>
+      
+      <!-- footer -->
+      <footer>
+              <section>
+<div> <h2 class="contact">CONTACT ME</h2></div>
+      <!-- <section class="lines"> -->
+        <div class="lines">
+      <div> <i class="fa-brands fa-linkedin"></i></div>
+      <div><i class="fa-brands fa-github"></i></div>
+      <div><i class="fa-brands fa-facebook"></i></div>
+      </div>
+      </section>
+  
+</footer>
+</body>
+</html>
